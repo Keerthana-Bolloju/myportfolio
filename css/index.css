@@ -1,0 +1,277 @@
+body { 
+  margin: 0;
+  background-color:#000000;
+  color: #ffffff;
+}
+.container-fluid{
+  width: 100%;
+  position:fixed;
+  z-index: 9999;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  color: #ffffff;
+}
+
+.nav-item {
+  padding: 0 30px;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color:  #FFDF00;
+  font-size: 1.2em;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+
+.nav-item-toggle {
+  display: none;
+}
+ul li{
+	margin-bottom:10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu,
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-menu {
+    display:none;
+  }
+.navbar {
+  background-color: #000000;
+}
+  .toggle-nav {
+    display: flex;
+  }
+  .nav-item-toggle {
+    top: 0;
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+   .nav-item {
+  padding: 10px 30px;
+}
+.container{
+  flex-direction: column !important;
+}
+
+.img-responsive{
+  width: 100vw !important;
+}
+.column-half1{
+  order: -1;
+}
+.intro-bg{
+    text-align: center;
+}
+.column-half1{
+  width: 100vw !important;
+}
+
+#about .container .column-3:last-child{
+  width: 90vw !important;
+}
+.gallery-img-item{
+  width: 100vw;
+}
+ .img-text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .title {
+    margin-bottom: 1em;
+  }
+  #about h2, #professional h2, #projects h2 {
+    font-size: 2.4em !important;
+}
+
+.intro{
+  font-size: 2.8em !important;
+}
+
+}
+@media (min-width: 400px) and (max-width: 415px){  
+/*.gallery-img-item{
+  margin: 0 !important;
+  padding: 14vw;
+}*/
+.column-3{
+  width: 80vw !important;
+}
+}
+@media (max-width: 320px){  
+.column-3{
+  width: 100vw !important;
+}
+}
+
+@media (min-width: 360px) and (max-width: 380px){  
+.column-3{
+  width: 90vw !important;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1370px){
+  .m-5 {
+    margin: 0vw !important;
+}
+}
+
+
+/*-------------------------Media queries end------------------------------*/
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container1{
+  display: flex;
+}
+.bg-color{
+  background: #000000;  
+}
+.column-half{
+  padding: 11vw 6vw 6vw;
+  width: 50vw;
+}
+.column-half1{
+  width: 50vw;
+}
+.img-responsive{
+  box-shadow: 0px 3px 20px 2px #2c2c2c;
+    width: 49vw;
+    opacity: 0.7;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 3.5em;
+}
+.intro-bg{  
+  color: darkgoldenrod;
+  font-family: Tangerine;
+  font-weight: bold;
+  text-shadow: -6px 4px 10px saddlebrown;
+}
+.anim-delay{
+  animation-delay: 1s;
+}
+.anim-delay1{
+  animation-delay: 2s;
+}
+.anim-delay2{
+  animation-delay: 3s;
+}
+.margin{
+  margin: 10vw 5vw;
+  padding-top: 10vh
+}
+.m-5{
+  margin: 5vw;
+}
+.m-zero{
+  margin: 0;
+}
+.p-top-10{
+  padding-top: 10vh;
+}
+.column-3{
+  width: 33vw;
+}
+.column-3 h3{
+  text-align: center; 
+  color: darkgoldenrod;
+  font-weight: bold;
+  font-style: italic;
+}
+.center{
+  text-align: center;
+}
+.column-12{
+  width: 100vw;
+}
+.font{    
+  color: darkgoldenrod;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: -4px 2px 4px saddlebrown;
+}
+#about .container,#professional .container,#projects .container{
+  font-size: 1.1em;
+}
+#about h2,#professional h2,#projects h2{
+  font-size: 3em;
+}
+
+.p-left{
+  padding-left: 10vw
+}
+.p-left-5{
+  padding-left: 5vw
+}
+.button{
+    font-size: 1.1em;
+    background: transparent;
+    color: darkgoldenrod;
+    padding: 10px 20px;
+    border: 1px solid darkgoldenrod;
+}
+.button:hover{
+    box-shadow: 0px 3px 20px 2px saddlebrown;
+    cursor: pointer;
+  }
+
+.gallery-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-img-item {
+  /*width: 330px;
+  height: 265px;
+  margin: 10px;*/
+  margin: 1.5vh 1.5vh 10vh 2.5vh;
+  text-decoration: none;
+}
+
+.gallery-img-item img {
+  position: absolute;
+}
+
+.img-text-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+.img-text-wrapper:hover {
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
